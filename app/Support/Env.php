@@ -22,7 +22,7 @@ class Env{
     {
         // init line
         if(empty($this->lines)){
-            $content = file_get_contents(base_path('.env'));
+            $content = file_get_contents(base_path('.env.example'));
             $this->lines = explode(PHP_EOL, $content);
         }
 
